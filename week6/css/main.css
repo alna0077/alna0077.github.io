@@ -47,6 +47,17 @@ nav ul a {
     background-size: cover;
     color: white;
 
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20px */
+
+    /* 1em = 20px */
+    padding: 1em;
+    /* viewpoint based unit vh and vw */
+    /* height: 100vh; */
+
+    /* % based on parent container width */
+    width: 50%;
+
 }
 
 /* Selecting elements with class value  */
