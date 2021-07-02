@@ -52,12 +52,12 @@ nav ul a {
 
     /* 1em = 20px */
     padding: 1em;
+
     /* viewpoint based unit vh and vw */
     /* height: 100vh; */
 
     /* % based on parent container width */
     width: 50%;
-
 }
 
 /* Selecting elements with class value  */
@@ -140,12 +140,13 @@ table {
 /* nth-child selector with odd/even keyword */
 
 tbody tr:nth-child(even) {
-    background-color: #d5863c;
+    background-color: #d5836c;
 }
 
 /* nth-child selector with n. where n is 0,1,2,3... */
 table th:nth-child(n),
 table td:nth-child(n) {
+/* 3 digit hex */
     border: 1px solid #000;
 }
 
