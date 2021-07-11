@@ -1,0 +1,199 @@
+/* adding default border box sizing for the whole html */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* adding background and basic body style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+
+/* styling the page container with different background and width */
+#container {
+    background-color: rgb(255, 255, 255, 0.6);
+    width: 900px;
+    max-width: 900px;
+    font-size: 16px;
+    margin: 0 auto 1em;
+    padding: 0 0 1em 0;
+    font-size: 100%;
+}
+
+/* positioning the top container */
+#top-container {
+    position: relative;
+    margin-top: -.5em;
+}
+
+/* resizing the wide image */
+#top-image {
+    width: 100%;
+    position: relative;
+}
+
+/* styling and positioning h1 on top of the image */
+h1 {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 25%;
+    left: 38%;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    transform: scale(1, 1.5);
+    font-weight: lighter;
+}
+
+/* correcting the place of the navigation list  */
+.top-titles {
+    margin-top: -1em;
+}
+
+/* formatting and styling the navigation list */
+nav li {
+    width: 31%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: inherit;
+    font-weight: bold;
+    transform: scale(1, 1.25);
+}
+
+/* adding borders between the navigation/anchor tags */
+.border-right {
+    border-right: 2px solid gray;
+}
+
+/* styling and positioning second header */
+h2 {
+    padding: 1ex 0 0 1ex;
+    font-size: 1.75rem;
+    font-style: normal;
+    text-decoration: none;
+    transform: scale(1, 1.25);
+}
+
+/* styling and positioning the last two headers */
+h3 {
+    padding-left: 1em;
+    font-size: 1rem;
+    text-decoration: none;
+    transform: scale(1, 1.25);
+    margin-top: 1.5em;
+}
+
+/* adding clear fix to the main section */
+
+.main-section {
+    clear: both;
+}
+
+/* styling and positioning the main paragraph */
+.main-paragraph {
+    position: relative;
+    padding: 2ex;
+    text-align: justify;
+    margin-top: -1em;
+}
+
+/* styling the image to have the text around it */
+#inline-image {
+    width: 250px;
+    float: left;
+    position: relative;
+    padding: 1em;
+    margin-top: -1em;
+}
+
+/* styling the fact list */
+aside li {
+    list-style-type: disc;
+}
+
+/* styling the contact form - start */
+#contact-form {
+    display: block;
+    margin: 0 auto;
+}
+
+/* positioning and styling the contact body div  */
+.contact-body {
+    margin: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    padding: 30px 10px 10px 10px;
+    border: 1px solid gray;
+    max-width: 100%;
+}
+
+/* resizing /styling the contact form input area */
+.contact-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    color: black;
+}
+
+/* adding margin and changing border color to the form input area */
+#fullname,
+#email {
+    margin:.5em 0 1.5em 0;
+    border: 1px solid gainsboro;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: inherit;
+    font:inherit;
+
+}
+
+/* adding margin and changing border color to the form input area */
+
+#message {
+    border: 1px solid gainsboro;
+    font-size: 120%;
+    font-style: normal;
+    font-weight: inherit;
+    font:inherit;
+    margin:.5em 0 0 0;
+}
+
+/* unifying the format of the last question and form headers */
+/* (Your Name, Your Email, Your Message, and the bottom question) */
+.small-header {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* formatting and send button  */
+.contact-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    padding: .5rem .5rem;
+    margin: .5rem 0;
+    background-color: inherit;
+}
+
+/* styling and position the site footer */
+#footer-control {
+    list-style-type: none;
+    text-align: right;
+    padding: 3ex;
+    font-size: .75rem;
+    /* margin-top: 2em; */
+}
+
+/* Styling end  */

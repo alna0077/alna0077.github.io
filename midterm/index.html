@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lone Starfish</title>
+    <!-- linking html page with styling sheet -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- adding div to style the body -->
+    <div id="container">
+        <header>
+            <div id="top-container">
+                <!-- adding the top image -->
+                <img id="top-image" src="./images/lone-starfish-wide.jpg" alt="Starfish large image">
+                <!-- to format the appearance h1 adding under the image -->
+                <h1 class="top-h1">Lone Starfish</h1>
+            </div>
+        </header>
+        <!-- <div id="top-main"> -->
+        <div class="top-titles">
+            <nav>
+                <ul>
+                    <!-- the border to right need to be added to two anchor tags only -->
+                    <li class="border-right"><a>Home</a></li>
+                    <li class="border-right"><a>Story</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <!-- adding the main text and image -->
+            <div class="main-section">
+                <h2>
+                    Life of a Starfish
+                    <!-- adding the second image  -->
+                </h2>
+                <img id="inline-image" src="./images/lone-starfish.jpg" alt="Starfish focused image">
+                <p class="main-paragraph">
+                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
+                    catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
+                    batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike
+                    barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose
+                    chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch
+                    snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout,
+                    killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio
+                    dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra
+                    squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish
+                    pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard
+                    danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut
+                    glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor
+                    drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel
+                    tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth
+                    humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish
+                    searobin false trevally, dottyback.
+                </p>
+            </div>
+        </main>
+        <!-- adding fact as unordered list -->
+        <aside>
+            <h3>Facts About Starfish</h3>
+            <ul>
+                <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+            </ul>
+        </aside>
+        <!-- Adding the contact form -->
+        <div>
+            <h3>Contact to learn more</H3>
+            <div class="contact-body">
+                <div>
+                    <form id="contact-form" class="contact-form" method="post" action="contact.html">
+                        <div class="contact-form">
+                            <label for="fullname" class="small-header">Your Name</label>
+                            <div>
+                                <input type="text" id="fullname" name="fullname" class="contact-control" required>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <label for="email" class="small-header">Your Email</label>
+                            <div>
+                                <input type="email" id="email" name="youremail" class="contact-control" required>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <label for="message" class="small-header">Your Message</label>
+                            <div>
+                                <textarea id="message" name="yourmessage" class="contact-control" rows="6"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- adding three radio selections for the last question -->
+                            <h4 class="small-header">Would you like to visit the starfish?</h4>
+                            <label for="yes" class="yes">Yes</label>
+                            <input type="radio" class="radio-control" id="yes" name="past" value="yes">
+                            <label for="no" class="no">No</label>
+                            <input type="radio" class="radio-control" id="no" name="past" value="no">
+                            <label for="maybe" class="maybe">Maybe</label>
+                            <input type="radio" class="radio-control" id="maybe" name="past" value="maybe">
+                        </div>
+                        <div class="contact-form">
+                            <!-- adding submit/sent button-->
+                            <button type="submit" id="fcf-button" class="contact-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- inserting site footer -->
+        <footer id="footer-control">
+            &copy; Lone Starfish.
+        </footer>
+    </div> <!-- closing the main container -->
+</body>
+
+</html>
