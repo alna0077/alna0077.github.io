@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ------------------------------------------------
@@ -55,12 +142,14 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     box-sizing: border-box;
-}    
+}
+
 *,
 *::after,
 *::before {
-    box-sizing: inherit;    
+    box-sizing: inherit;
 }
+
 body {
     line-height: 1.5;
 }
@@ -74,6 +163,7 @@ body {
 img {
     width: 100%;
 }
+
 /* LoVe HAte */
 a,
 a:link,
@@ -86,10 +176,10 @@ a:focus {
     color: #00ADD8;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
+h1,
+h2,
+h3,
+h4,
 h5 {
     font-weight: bold;
     /* top left-right bottom */
@@ -150,19 +240,55 @@ p {
     text-align: center;
 }
 
+/* Navigation */
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 0em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00ADD8;
+    color: inherit;
+}
+
 /* -------------- Mobile app section ------------- */
 .btn {
     text-decoration: none;
-    display: inline-block; 
+    display: inline-block;
     border: 1px solid grey;
-    border-radius: 4px;  
+    border-radius: 4px;
     padding: 20px;
 }
 
 .btn:hover,
 .btn:focus {
     color: inherit;
-    background-color: #00ADD8;   
+    background-color: #00ADD8;
+}
+
+/* ------------Simple Actions section  --------------- */
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+
 }
 
 /* ------------Footer --------------- */
@@ -185,6 +311,7 @@ p {
     html {
         font-size: 16px;
     }
+
     .mobile-logo {
         display: none;
     }
@@ -193,6 +320,7 @@ p {
         display: inline-block;
         max-width: 300px;
     }
+
     .banner {
         background-image: url("../images/desktop-banner.jpg");
     }
@@ -200,18 +328,45 @@ p {
     .banner h1 {
         color: white;
     }
+
+    /* Navigation */
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
     /* App section */
     .app img {
-    width: 40%;
-    float: left;
-    margin-right: 1em;
-}
+        width: 40%;
+        float: left;
+        margin-right: 1em;
+    }
 
     .app .btn {
         float: right;
     }
 
     /* add clearfix to the parent */
+}
 
-    
+/* closing 600 px media query */
+
+/* -----------------------------------
+    Media Query 800px and above 
+----------------------------------- */
+
+@media screen and (min-width:800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
+
 }
